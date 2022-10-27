@@ -65,3 +65,54 @@ function wezen_register_menus(){
  * 
  */
 add_action( 'init', 'wezen_register_menus' );
+
+function wezen_scripts_styles(){
+
+    /**
+     * 
+     * Script padrão JQuery
+     * 
+     */
+    wp_enqueue_script( 'JQuery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), '3.6.1', false );
+    
+    /**
+     * 
+     * Script padrão PopperJs
+     * 
+     */
+    wp_enqueue_script( 'PopperJs', get_template_directory_uri() . '/assets/js/popper.min.js', array(), '2.11.6', true );
+
+    /**
+     * 
+     * Carrega o CSS de acordo com o tipo de página
+     * 
+     */
+    if( is_page() ):
+
+        wp_enqueue_style( 'default-style', get_template_directory_uri() . '/assets/css/default.min.css', array(), '1.0.0', 'all' );
+
+    elseif( is_home() ):
+
+        wp_enqueue_style( 'blog-style', get_template_directory_uri() . '/assets/css/blog.min.css', array(), '1.0.0', 'all' );
+
+    elseif( is_front_page() ):
+
+        wp_enqueue_style( 'front-style', get_template_directory_uri() . '/assets/css/front.min.css', array(), '1.0.0', 'all' );
+
+    elseif( is_search() ):
+
+        wp_enqueue_style( 'search-style', get_template_directory_uri() . '/assets/css/search.min.css', array(), '1.0.0', 'all' );
+
+    elseif( is_singular() ):
+
+        wp_enqueue_style( 'post-style', get_template_directory_uri() . '/assets/css/post.min.css', array(), '1.0.0', 'all' );
+
+    elseif( is_archive() || is_tag() || is_category() ):
+
+        wp_enqueue_style( 'stack-style', get_template_directory_uri() . '/assets/css/stack.min.css', array(), '1.0.0', 'all' );
+
+    endif;
+}
+
+// Chama o procedimento
+add_action( 'wp_enqueue_scripts', 'wezen_scripts_styles' );

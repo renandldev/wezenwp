@@ -1,0 +1,31 @@
+/*
+
+Estilos para a página padrão estática
+
+@package wezenwp
+
+@since 1.0.0
+
+*/
+
+// Importa código do Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+//Importa código do Font Awesome
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss';
+
+// Importa as fontes utilizadas no tema
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// Importa os elementos isolados
+@import './elements/navbar-top';
+@import './elements/navbar-footer';
+
+// Define a font padrão para o tema
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, button, table, a, div, blockquote, form, nav, header, footer{
+    font-family: 'Inter', sans-serif !important;
+}
