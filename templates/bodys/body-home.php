@@ -18,3 +18,5 @@
     endif;
     ?>
 </main>
+<?php 
+wezen_get_part( 'navbar', 'sidebar' );

@@ -59,3 +59,19 @@ function wezen_get_template( $slug ){
     get_template_part( $wezen_path, $wezen_arg );
 
 }
+
+/**
+ * 
+ * Procedimento que retorna uma parte do tema
+ * 
+ * @since 1.0.0
+ * 
+ */
+function wezen_get_part( $part, $arg ){
+
+    // Transforma a parte solicitada do singular para o plural, acessando a pasta
+    $plural = 'parts/' . $part . 's/' . $part;
+
+    get_template_part( $plural, $arg );
+
+}

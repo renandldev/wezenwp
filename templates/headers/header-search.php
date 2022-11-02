@@ -17,3 +17,7 @@
         <?php wp_head();?>
     </head>
     <body id="search-body" class="">
+        <?php wezen_get_part( 'navbar', 'top' );?>
+        <header id="" class="">
+
+        </header>

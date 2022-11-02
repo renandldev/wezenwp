@@ -17,4 +17,7 @@
         <?php wp_head();?>
     </head>
     <body id="404-body" class="">
-        
+        <?php wezen_get_part( 'navbar', 'top' );?>
+        <header id="" class="">
+
+        </header>
