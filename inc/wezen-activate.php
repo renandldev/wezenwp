@@ -75,3 +75,23 @@ function wezen_get_part( $part, $arg ){
     get_template_part( $plural, $arg );
 
 }
+
+/**
+ * 
+ * Adiciona classes ao link de menu
+ * 
+ */
+function wezen_link_classes( $atts, $item, $args ){
+
+    $atts[ 'class' ] = 'menu-link';
+
+    return $atts;
+
+}
+
+/**
+ * 
+ * Chama a função
+ * 
+ */
+add_filter( 'nav_menu_link_attributes', 'wezen_link_classes', 10, 3 );

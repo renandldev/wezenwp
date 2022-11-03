@@ -1,0 +1,75 @@
+/*
+ Classe principal da barra de navegação
+*/
+.navbar-top{
+
+    @extend .navbar;
+    @extend .navbar-expand-md;
+    @extend .bg-light;
+    @extend .sticky-top;
+
+    /*
+     Container para herdar o container de largura máxima
+    */
+    .full-container{
+
+        @extend .container-fluid;
+        @extend .d-flex;
+        @extend .justify-content-center;
+
+
+        .logo-site{
+            
+            @extend .navbar-brand;
+            @extend .justify-content-start;
+
+        }
+
+
+        .form-search{
+
+            @extend .d-flex;
+
+            .input-search{
+
+                @extend .form-control;
+
+            }
+
+            .button-search{
+
+                @extend .btn;
+
+            }
+        }
+
+        .menu-container{
+
+            @extend .collapse;
+            @extend .navbar-collapse;
+            //@extend .flex-row-reverse;
+            @extend .justify-content-end;
+    
+            .menu-top{
+    
+                @extend .navbar-nav;
+    
+                .menu-item{
+    
+                    @extend .nav-item;
+    
+                    .menu-link{
+    
+                        @extend .nav-link;
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+
+    }
+
+}
