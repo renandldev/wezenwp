@@ -18,6 +18,6 @@
     </head>
     <body id="post-body" class="">
         <?php wezen_get_part( 'navbar', 'top' );?>
-        <header id="" class="">
-
+        <header id="single-header" class="header-full" role="banner">
+            <?php the_post_thumbnail( 'full', [ 'class' => 'img-header', 'title' => get_the_title() ] );?>
         </header>

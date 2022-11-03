@@ -11,3 +11,6 @@
 <main id="search-content" class="">
 
 </main>
+<?php 
+wezen_get_part( 'navbar', 'sidebar' );
+

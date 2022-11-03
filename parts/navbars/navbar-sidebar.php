@@ -8,7 +8,7 @@
  * @since 1.0.0
  * 
  */?>
-<nav class="block-vertical-nav">
+<nav class="small-part-content">
     <?php 
     if( has_nav_menu( 'side' ) ):
 

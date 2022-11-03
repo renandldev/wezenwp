@@ -33,6 +33,18 @@ add_theme_support(
 
 /**
  * 
+ * Imagens destacadas
+ */
+add_theme_support( 'post-thumbnails' );
+
+/**
+ * 
+ * Title head tag
+ */
+add_theme_support( 'title-tag' );
+
+/**
+ * 
  * Adiciona Embeds responsivos
  * 
  */

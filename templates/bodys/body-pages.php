@@ -8,7 +8,7 @@
  * @since 1.0.0
  * 
  */?>
-<main id="default-content" class="">
+<main id="default-content" class="full-content">
     <?php 
     if( have_posts() ):
         while( have_posts() ):

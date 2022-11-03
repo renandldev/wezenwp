@@ -11,3 +11,5 @@
 <main id="stack-content" class="">
 
 </main>
+<?php 
+wezen_get_part( 'navbar', 'sidebar' );
